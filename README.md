@@ -34,30 +34,55 @@ Benefícios: Escalabilidade, isolamento de falhas e deploy independente.
 
 nodejs-microservices/
 ├── cliente-service/
+
 │   ├── app.js
+
 │   ├── .env
+
 │   ├── package.json
+
 │   ├── config/database.js
+
 │   ├── models/Cliente.js
+
 │   ├── controllers/cliente.controller.js
+
 │   ├── routes/cliente.routes.js
+
 ├── pedido-service/
+
 │   ├── app.js
+
 │   ├── .env
+
 │   ├── package.json
+
 │   ├── config/database.js
+
 │   ├── models/Pedido.js
+
 │   ├── controllers/pedido.controller.js
+
 │   ├── routes/pedido.routes.js
+
 ├── produto-service/
+
 │   ├── app.js
+
 │   ├── .env
+
 │   ├── package.json
+
 │   ├── config/database.js
+
 │   ├── models/Produto.js
+
 │   ├── controllers/produto.controller.js
+
 │   ├── routes/produto.routes.js
+
 ├── start-all.sh (ou start-all.js)  // Script para instalar e rodar tudo
+
 └── README.md
 
 ## Requisitos
@@ -181,3 +206,4 @@ Use Postman ou curl para testar. Todos endpoints são RESTful e usam JSON.
 - O pedido valida o cliente (e produtos, se configurado) antes de salvar.
 - Erros: Retorna JSON com mensagem (ex: 404 para não encontrado).
 - Expanda adicionando mais serviços ou integrações.
+
